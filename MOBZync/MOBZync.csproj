@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8DBA515B-B217-4E45-AA58-3172149D0AC4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MOBZync</RootNamespace>
+    <AssemblyName>MOBZync</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ApplicationIcon>MOBZync.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CopyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CopyForm.Designer.cs">
+      <DependentUpon>CopyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileItem.cs" />
+    <Compile Include="FileSystemItem.cs" />
+    <Compile Include="FolderItem.cs" />
+    <Compile Include="FolderTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderTree.Designer.cs">
+      <DependentUpon>FolderTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options.cs" />
+    <Compile Include="SHFileInfo.cs" />
+    <Compile Include="SHFileOperation.cs" />
+    <Compile Include="ShowTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowTextForm.Designer.cs">
+      <DependentUpon>ShowTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemImageList.cs" />
+    <Compile Include="WaitCursor.cs" />
+    <Compile Include="ZyncForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZyncForm.Designer.cs">
+      <DependentUpon>ZyncForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CopyForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CopyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderTree.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FolderTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowTextForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ShowTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZyncForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ZyncForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="images\Colored balls 16x16.psd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\added.png" />
+    <Content Include="images\black ball.png" />
+    <None Include="images\black-ball.gif" />
+    <None Include="images\black.png" />
+    <None Include="images\black.ico" />
+    <Content Include="images\blue ball.png" />
+    <Content Include="images\file.png" />
+    <Content Include="images\FillLeftHS.png" />
+    <Content Include="images\FillRightHS.png" />
+    <Content Include="images\folder.png" />
+    <Content Include="images\green ball.png" />
+    <Content Include="images\magenta ball.png" />
+    <Content Include="images\newer.png" />
+    <Content Include="images\older.png" />
+    <Content Include="images\openfolder.png" />
+    <Content Include="images\red ball.png" />
+    <Content Include="images\SychronizeListHS.png" />
+    <Content Include="images\unchanged.png" />
+    <Content Include="images\upfolder.PNG" />
+    <Content Include="MOBZync.ico" />
+    <Content Include="Todo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
