@@ -3,19 +3,19 @@ Todo:
 - Enable/disable up button
 - Add root button
 - Make refresh work (including compare if state was compared, also after a sync)
-- Add setup
+- Add setup - Done, except doesn't work in VS2012 anymore
 - Clicking on a file in the list makes the selection disappear
 - Add more file/folder information in the status bar
 - Make an Action column in the list view, that shows how the file will be handled. Options change the way the actions are assigned. Sync is only an execution of the actions.
 - Make preview go to a temporary file (or rather: display in a window)
 - Add error handling to command line argument handling
 - Show a preview of the operation before it happens (number of files to copy etc)
-- Directory handling: remove a directory that is empty after removal of it's files
+- Directory handling: remove a directory that is empty after removal of its files
 - Directory handling: add a directory even if it does not contain any files
 
 Done:
 
-- Aded Copy left to right and Copy right to left
+- Added Copy left to right and Copy right to left
 - Enable/disable sync button
 - Add version number to link
 - Make link work
